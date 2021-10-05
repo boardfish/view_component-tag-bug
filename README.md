@@ -1,24 +1,12 @@
-# README
+This app replicates a bug I experienced in ViewComponent.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In `app/components/field_component.rb`, using the `tag` helper does not
+return a closed tag. However, using the `content_tag` helper does. The
+former is generally recommended over the latter by RuboCop.
 
-Things you may want to cover:
+### Running
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This is a minimal Rails app, so make sure you have a recent (2.7+) Ruby
+installed with `bundler`. Use `bundle install` to install the
+dependencies, then run `rails s` to bring the app live on
+`localhost:3000`.
