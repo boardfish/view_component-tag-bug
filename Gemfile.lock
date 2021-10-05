@@ -143,6 +143,9 @@ GEM
     tilt (2.0.10)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+    view_component (2.40.0)
+      activesupport (>= 5.0.0, < 8.0)
+      method_source (~> 1.0)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -159,6 +162,7 @@ DEPENDENCIES
   sass-rails (>= 6)
   sqlite3 (~> 1.4)
   tzinfo-data
+  view_component (~> 2.40)
 
 RUBY VERSION
    ruby 2.7.2p137
